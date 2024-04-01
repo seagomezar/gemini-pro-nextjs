@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chat Moderno con Gemini Pro y Next.js
 
-## Getting Started
+Este proyecto demuestra la integración de Gemini Pro, una poderosa API de inteligencia artificial, con Next.js para crear una interfaz de chat moderna y funcional. Utilizando la API de Google Generative AI, este chat ofrece respuestas generadas por IA a las entradas del usuario, proporcionando una experiencia única e interactiva.
 
-First, run the development server:
+## Características
 
-```bash
+- **Integración con Gemini Pro**: Utiliza la última tecnología de IA para generar respuestas a las consultas de los usuarios.
+- **Diseño Moderno**: Interfaz de usuario construida con Tailwind CSS, ofreciendo un diseño atractivo y responsivo.
+- **Seguridad Mejorada**: Implementa configuraciones de seguridad para filtrar contenido no deseado.
+
+## Requisitos Previos
+
+Antes de comenzar, asegúrate de tener Node.js y npm instalados en tu sistema. Este proyecto fue creado con la siguiente versión de Node.js: `v18.x.x` o superior.
+
+## Configuración del Proyecto
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. **Clonar el Repositorio**
+
+   ```bash
+   git clone https://tu-repositorio-aqui.git
+   cd nombre-del-proyecto
+Instalar Dependencias
+
+bash
+Copy code
+npm install
+Configurar las Variables de Entorno
+
+Crea un archivo .env.local en la raíz del proyecto y añade tu API Key de Gemini Pro:
+
+makefile
+Copy code
+NEXT_PUBLIC_API=tu_api_key_aqui
+Nota: La API Key de Gemini Pro se debe obtener a través de Google Cloud Platform y debe ser mantenida en secreto.
+
+Ejecutar el Proyecto
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visita http://localhost:3000 en tu navegador para ver la aplicación en funcionamiento.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Uso
+Una vez que la aplicación esté ejecutándose, podrás interactuar con el chat de IA. Simplemente ingresa tu consulta en el campo de texto y presiona el botón "Enviar" para recibir una respuesta generada por IA.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contribuir
+Las contribuciones son lo que hace a la comunidad de código abierto un lugar increíble para aprender, inspirar y crear. Cualquier contribución que hagas será muy apreciada.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Forkea el Proyecto
 
-## Learn More
+Crea tu Rama de Características (git checkout -b feature/AmazingFeature)
 
-To learn more about Next.js, take a look at the following resources:
+Haz Commit de tus Cambios (git commit -m 'Add some AmazingFeature')
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Haz Push hacia la Rama (git push origin feature/AmazingFeature)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Abre un Pull Request
 
-## Deploy on Vercel
+## Licencia
+Distribuido bajo la Licencia MIT. Ver LICENSE para más información.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contacto
+Sebastian Gomez - @tu_twitter
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Enlace del Proyecto: https://github.com/seagomezar/gemini-pro-nextjs 
