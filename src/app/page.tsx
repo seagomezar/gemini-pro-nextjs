@@ -62,38 +62,40 @@ export default function Home() {
   
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-black ">
-      <div className="z-10 max-w-5xl w-full items-center bg-slate-400 justify-center h-screen font-mono text-sm lg:flex">
-        <div>
-          <div className="bg-blue-600 rounded-xl my-6">
-            <h1 className="text-2xl p-4">
-              Setting Up Google Gemini in Next.js
-            </h1>
-          </div>
-          <h1>Output</h1>
+    <main className="min-h-screen flex flex-col bg-gray-800 text-white">
+      <header className="py-6">
+        <div className="container mx-auto">
+          <h1 className="text-center text-3xl font-bold">Next.js Chat con Gemini-Pro</h1>
+        </div>
+      </header>
+
+      <section className="container mx-auto flex-1 flex flex-col md:flex-row gap-4 p-4">
+        <div className="flex-1">
+          <h2 className="text-xl font-semibold">Output</h2>
           <textarea
             value={responseData}
             readOnly
-            rows={40}
-            className="w-full"
+            rows={20}
+            className="w-full p-2 mt-2 bg-gray-700 rounded"
           ></textarea>
-          <div className="flex flex-col m-4">
-            <h1>Input</h1>
-            <textarea
-              className="w-full"
-              value={input}
-              rows={3}
-              onChange={(e) => setInput(e.target.value)}
-            ></textarea>
-            <button
-              className="m-4 bg-slate-200 rounded-xl hover:bg-slate-700"
-              onClick={runChat}
-            >
-              Run Gemini-Pro
-            </button>
-          </div>
         </div>
-      </div>
+
+        <div className="flex-1">
+          <h2 className="text-xl font-semibold">Input</h2>
+          <textarea
+            className="w-full p-2 mt-2 bg-gray-700 rounded"
+            value={input}
+            rows={3}
+            onChange={(e) => setInput(e.target.value)}
+          ></textarea>
+          <button
+            className="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded transition-colors"
+            onClick={runChat}
+          >
+            Enviar
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
